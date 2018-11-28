@@ -1,1 +1,1 @@
-# Repositorios para estudos aleatorios
+# Repositorio para estudos aleatorios
