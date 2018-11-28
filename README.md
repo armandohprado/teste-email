@@ -1,1 +1,1 @@
-# teste-email
+# Repositorios para estudos aleatorios
