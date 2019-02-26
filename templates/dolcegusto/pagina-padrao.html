@@ -1,0 +1,1162 @@
+{{customVar code=materialize}}
+<style type="text/css">
+   /*normalize*/
+   .icon-block {
+   padding: 0 15px;
+   }
+   .icon-block .material-icons {
+   font-size: inherit;
+   }
+   .col-main .cms-inside p {
+   margin: 0 !important;
+   }
+   .col-main {
+   text-align: center;
+   }
+   .main {
+   text-align: center;
+   }
+   header .hide {
+	  display:block !important;
+	}
+   body {
+   font-family:GothamRounded,Verdana,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+   }
+   .cms-inside h3 {
+   padding: 0;
+   }
+   #background-fixed {
+   width: 100%;
+   background-color: #fff;
+   position: fixed;
+   height: 130px;
+   z-index: 44;
+   }
+   .ripple {
+   background-position: center;
+   transition: background 0.8s;
+   }
+   .ripple:hover {
+   background: #fff radial-gradient(circle, transparent 1%, #dc3545 1%) center/15000%;
+   }
+   .ripple:active {
+   background-color: #fff;
+   background-size: 100%;
+   transition: background 0s;
+   }
+      .strong {
+   font-weight: bold !important;
+   }
+   .text-size-2 {
+   font-size: 2rem !important;
+   }
+   .text-size-2-5 {
+   font-size: 2.5rem !important;
+   }
+   .text-size-1 {
+   font-size: 1rem !important;
+   }
+   .text-size-1-5 {
+   font-size: 1.5rem !important;
+   }
+   .text-size-3 {
+   font-size: 3rem !important;
+   }
+   .text-size-3-5 {
+   font-size: 3.5rem !important;
+   }
+   .text-size-4 {
+   font-size: 4rem !important;
+   }
+   .text-size-4-5 {
+   font-size: 3.5rem !important;
+   }
+   .text-size-small {
+   font-size: 75% !important;
+   }
+   .text-size-medium  {
+   font-size: 100% !important;
+   }
+   .text-size-large {
+   font-size: 150% !important;
+   }
+   .radius-1 {
+   border-radius: 10px !important;
+   }
+   .radius-2 {
+   border-radius: 12px !important;
+   }
+   .radius-3 {
+   border-radius: 14px !important;
+   }
+   .radius-4 {
+   border-radius: 16px !important;
+   }
+   .radius-5 {
+   border-radius: 18px !important;
+   }
+   .height-medio {
+   min-height: 26rem !important;
+   }
+   .n-margin-top-1 {
+   margin-top :-1rem !important;
+   }
+   .n-margin-top-2 {
+   margin-top :-2rem !important;
+   }
+   .n-margin-top-3 {
+   margin-top :-3rem !important;
+   }
+   .n-margin-top-4 {
+   margin-top :-4rem !important;
+   }
+   .n-margin-top-5 {
+   margin-top :-5rem !important;
+   }
+   .n-margin-top-6 {
+   margin-top :-10rem !important;
+   }
+   .padding-top-1 {
+   padding-top:1rem !important;
+   }.padding-top-2 {
+   padding-top:1rem !important;
+   }.padding-top-3 {
+   padding-top:1rem !important;
+   }.padding-top-4 {
+   padding-top:1rem !important;
+   }.padding-top-5 {
+   padding-top:1rem !important;
+   }
+   .padding-bottom-1 {
+   padding-bottom:1rem !important;
+   }.padding-bottom-2 {
+   padding-bottom:1rem !important;
+   }.padding-bottom-3 {
+   padding-bottom:1rem !important;
+   }.padding-bottom-4 {
+   padding-bottom:1rem !important;
+   }.padding-bottom-5 {
+   padding-bottom:1rem !important;
+   }
+   .padding-y-1 {
+   padding-top:1rem !important;
+   padding-bottom:1rem !important;
+   }
+   .padding-y-2 {
+   padding-top:2rem !important;
+   padding-bottom:2rem !important;
+   }
+   .padding-y-3 {
+   padding-top:3rem !important;
+   padding-bottom:3rem !important;
+   }
+   .padding-y-4 {
+   padding-top:4rem !important;
+   padding-bottom:4rem !important;
+   }
+   .padding-y-5 {
+   padding-top:5rem !important;
+   padding-bottom:5rem !important;
+   }
+   .no-padding {
+   padding: 0 !important;
+   }
+   .no-margin {
+   margin: 0 !important;
+   }
+   .width-small {
+   width: 75% !important;
+   }
+      .azul-text {
+   color:#00d0ef;
+   }
+   .azul {
+   background:#00d0ef;
+   }
+      .red-text {
+   color: #ff4e18;
+   }
+   .red {
+   background: #ff4e18;
+   }
+   .cinza-text {
+   color: #e6e6e6;
+   }
+   .cinza {
+   background: #e6e6e6;
+   }
+  .brown-text {
+   color:#411e00 !important;
+   }
+   .n-border {
+   border: none !important;
+   }
+
+   /*normalize*/
+   .btn {
+   	margin-bottom: 3px;
+   }
+   mark {
+   padding: 0.1em 1em;
+   background-color: #ff4e18;
+   color: #fff;
+   }
+   #index-banner {
+   background: url() no-repeat #00cfef center;
+   /*background-size: contain;*/
+   }
+   .circle { 
+   border: 15px solid white;
+   width: 75px;
+   height: 75px;
+   background-color: #ccc;
+   border-radius: 100%; 
+   }
+   .linha {
+   margin: 20px 0;
+   }
+   .linha:after,.linha:before {
+   background-color: #00d0ef;
+   content: "";
+   height: 2px;
+   position: absolute;
+   width: 23%;
+   margin-top: 20px;
+   }
+   .linha:after{
+   left: 18%;
+   }
+   .linha:before {
+   right: 18%;
+   }
+   .linha.white-text:before{
+   right: 16%;
+   }
+   .linha.white-text:after{
+   left: 16%;
+   }
+   .linha.white-text:after,.linha.white-text:before {
+   background-color: #fff;
+   width: 20%;
+   }
+
+   .btn.azul:hover {
+   background:#fff  !important;
+   color:#090909 !important;
+   }
+
+   .linha.brown-text:before{
+   right: 16%;
+   }
+   .linha.brown-text:after{
+   left: 16%;
+   }
+   .linha.brown-text:after,.linha.brown-text:before {
+   background-color: #411e00;
+   width: 20%;
+   }
+
+   .col-11-center{
+   left:50%;
+   transform: translateX(-50%);
+   }
+
+   .linha-bottom:after {
+   background-color: #000;
+   content: "";
+   height: 2px;
+   width: 60px;
+   margin:14px auto 10px auto;
+   display: block;
+   }
+   .sublinhado:before {
+   content: " ";
+   width: 3%;
+   height: 2px;
+   background: #00d0ef;
+   position: absolute;
+   left: 48.5%;
+   margin-top: -10px;
+   }
+
+
+/*notebook*/
+@media screen and (max-width:1367px) {
+   .linha:after {
+   left:13%;
+   }
+   .linha:before {
+   right:13%;
+   }
+   .linha.white-text:before{
+   right: 10%;
+   }
+   .linha.white-text:after{
+   left: 10%;
+   }
+   .linha.brown-text:before {
+   right: 11%;
+   }
+   .linha.brown-text:after {
+   left: 11%;
+   }
+}
+/*metade*/
+@media screen and (max-width:955px) {
+   .linha:after {
+   left:11%;
+   }
+   .linha:before {
+   right:11%;
+   }
+   .linha.white-text:before{
+   right: 5%;
+   }
+   .linha.white-text:after{
+   left: 5%;
+   }
+   .linha.brown-text:before {
+   right: 3%;
+   }
+   .linha.brown-text:after {
+   left: 3%;
+   }
+   .height-medio {
+   	min-height: 28rem !important;
+   }
+   #background-fixed {
+	    width: 100%;
+	    background-color: #fff;
+	    position: fixed;
+	    height: 150px;
+	    z-index: 44;
+	}
+}
+@media screen and (max-width:750px) {
+	.linha:before,.linha:after {
+		opacity: 0;
+	}
+	.bebidas.sublinhado:before {
+	    content: " ";
+	    width: 3%;
+	    height: 2px;
+	    background: #00d0ef;
+	    position: absolute;
+	    left: 48.5%;
+	    margin-top: 10px;
+	}
+	.height-medio {
+	   	min-height: 24rem !important;
+   	}
+   	.padding-y-3 {
+	    padding-top: 3rem !important;
+	    padding-bottom: 1rem !important;
+   	}
+   	.text-size-2 {
+	    font-size: 1rem !important;
+	}
+	.cms-page-view #cms-page .cms-inside h2 {
+	    font-size: 18px;
+	    line-height: normal;
+	}
+	.text-size-2-5 {
+		font-size: 1.5rem !important;
+	 }
+	 .text-size-large {
+	    font-size: 100% !important;
+	}
+	.faq-section {
+	    background: #fdfdfd;
+	    min-height: auto;
+	    padding: 2vh 0 0;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+		.title-carousel-m{
+			font-family: GothamRounded;
+		    font-size: 25px!important;
+		    font-weight: bold;
+		    color: #411e00;
+		    margin-top: 8%!important;
+		}
+		.price-m{
+			font-family: GothamRounded;
+		    font-size: 40px;
+		    font-weight: bold;
+		    color: #ff4c17;
+		}
+		.cada-m{
+			font-family: GothamRounded;
+		    font-size: 11px;
+		    font-weight: bold;
+		    color: #411e00;
+		    margin-top: -8%;
+		    position: absolute;
+		    margin-left: 13%;
+		}
+		.width-img-m{
+			width: 25%!important;
+			margin-bottom: 5%;
+		}
+		.price-small-m{
+			font-family: GothamRounded;
+		    font-size: 20px;
+		    font-weight: bold;
+		    color: #ff4c17;
+		    margin-top: 2%;
+		    position: absolute;
+		    margin-left: -1%;
+		}
+		.top-0-m{
+			margin-top: 0%;
+		}
+		.tachado-m{
+			font-family: GothamRounded;
+		    font-size: 9px;
+		    font-weight: normal;
+		    color: #411e00;
+		    text-decoration: line-through;	
+		    font-weight: bold;
+		}
+		.price-maq-m{
+			font-family: GothamRounded;
+		    font-size: 28.5px;
+		    font-weight: bold;
+		    text-align: left;
+		    color: #411e00;
+		}
+		.sub-price-m{
+		    font-family: GothamRounded;
+		    font-size: 18px;
+		    font-weight: bold;
+		    color: #411e00;
+		    margin-top: 1%;
+		    position: absolute;
+		}
+		.padding-m{
+    		padding-left: 0!important;
+		}
+		.padding-right-m{
+			text-align: right;
+		}
+		.left{
+			margin-left: -9%;
+    		margin-top: 5%;
+		}
+		.buy-m{
+			width: 95px;
+		    height: 42px;
+		    border-radius: 8px;
+		    background-color: #ff4c17;
+		    font-family: GothamRounded;
+		    font-size: 14.5px;
+		    font-weight: bold;
+		    text-align: center;
+		}
+		.juros-m{
+			font-family: GothamRounded;
+		    font-size: 7.5px;
+		    text-align: left;
+		    color: #411e00;
+		    position: absolute;
+		    margin-top: -1%;
+		    font-weight: bold;
+		}
+		.carousel-item.white-text.active {
+    		background: white;
+    		border-radius: 10px;
+		}
+		.por-m, .rs-m{
+			color: #411e00;
+			font-weight: bold;
+		}
+		.col.s4.buy-m.offset-s1{
+			padding-top: 10px;
+		}
+		.carousel.carousel-slider .carousel-item{
+		    min-height: 360px;
+		    height: 360px;
+		}
+		.title-carousel-2-m{
+			font-family: GothamRounded;
+		  	font-size: 17.5px;
+		  	font-weight: bold;
+		  	color: #411e00;
+		  	margin-top: 10%!important;
+		  	margin-bottom: 10%!important;
+		}
+		.rs-2-m{
+			color: #411e00;
+		    font-weight: bold;
+		    margin-top: 10%;
+		    font-size: 18px;
+		}
+		.top-m{
+			margin-top: 3%;
+		}
+		.width-carousel{
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
+}
+@media screen and (max-width:350px) {
+	.height-medio {
+	   	min-height: 21rem !important;
+   	}
+   	.padding-y-3 {
+	    padding-top: 1rem !important;
+	    padding-bottom: 1rem !important;
+   	}
+   	.desktop { display: none }
+	.mobile {
+		display: block;
+	}
+}
+</style>
+<div class="materialize">
+   <div class="section no-pad-bottom height-medio" id="index-banner" >
+      <div class="container">
+         <div class="row center">
+            <div class=" col l5 offset-l1 s12 truncate">
+               <h1 class="black-text strong"><b>COMPRE 1 MÁQUINA*</b></h1>
+               <h1 class="black-text strong"><b>e ganhe 1 caixa com</b></h1>
+               <h1 class="white-text strong"><b>50 cápsulas</b></h1>
+               <h1 class="white-text strong" style="margin: 5px auto;"><b><mark>à sua escolha</mark></b></h1>
+               <h1 class="white-text strong"><b>de 01/03 a 31/03</b></h1>
+               <h2 class="row-center col s12">
+                  <a href="#" id="download-button" style="margin-bottom:3px;" class="white-text btn-large ripple hoverable red col s5 l6 push-s4 push-l3 text-size-2 radius-1">APROVEITE</a>
+               </h2>
+            </div>
+         </div>
+         <div class="row-center text-size-small strong black-text">
+            <span class="col l6 s6 m6">*Promoção válida para máquinas a partir de R$ 249, de 01/03/2019 e 31/03/2019. Frete a ser calculado de acordo com o endereço da entrega. Confira os termos e condições.</span>
+            <br>
+         </div>
+      </div>
+   </div>
+   <div class="section no-pad-bot cinza height-medio">
+      <div class="container white n-margin-top-4 padding-y-3">
+         <div class="section">
+            <div class="row center col s12 l12">
+               <h2 class="linha azul-text text-size-2-5 ">PASSO A PASSO </h2>
+            </div>
+            <div class="row-center">
+               <p class="col s6 l6 black-text text-size-large">Assista ao vídeo para saber como resgatar a sua caixa, com <b>50 cápsulas dos sabores que quiser.</b></p>
+               <br>
+            </div>
+            <div class="video-container  container width-small">
+               <iframe src="https://www.youtube.com/embed/uwrVR_ul2hk" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section pad azul">
+      <div class="container">
+         <div class="section">
+            <div class="row center col s12">
+               <h2 class="linha white-text text-size-2-5">ESCOLHA SUA MAQUINA </h2>
+            </div>
+            <div class="row center col s12 desktop">
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">GENIO II</h2>
+                        <div class="" style="display: -webkit-inline-box;text-align: center;">
+                           <span class="red-text text-size-1">R$</span>
+                           <h2 class="red-text text-size-3">349</h2>
+                           <div style="display: grid;">
+                              <span class="red-text text-size-medio">,90</span>
+                              <span class="black-texto text-siz-medio">CADA</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l4 offset-l4 offset-s3 s6">
+                           <img class="responsive-img container" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/pCzN4bO77E4N-gdjFPdV7vqZvO285zSUwCK8BGAs/s150/2019-02-21.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                           <div class="col s12 pull-s0 pull-l2" style="text-decoration: line-through;line-height: 8px;">
+                              <span class="text-size-small"> de R$ 450,00</span>
+                           </div>
+                        </div>
+                        <div class="row strong">
+                           <div class="col l6 push-l1 s12 push-s0 ">
+                              <div class="col s12">
+                                 <div class="col s4 offset-s2 no-padding text-size-medium">
+                                    <span class=""> por 6x</span>
+                                    <span class=""> R$</span>
+                                 </div>
+                                 <div class="col s6 no-padding" style="display: -webkit-box;">
+                                    <h1 class="font-size-3-5 strong">58</h1>
+                                    <h3 class="font-size-2-5 strong">,17</h3>
+                                 </div>
+                                 <div class="row no-margin">
+                                    <span class="font-size-1">sem juros</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text red  font-size-1-5 radius-3" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">GENIO II</h2>
+                        <div class="" style="display: -webkit-inline-box;text-align: center;">
+                           <span class="red-text text-size-1">R$</span>
+                           <h2 class="red-text text-size-3">349</h2>
+                           <div style="display: grid;">
+                              <span class="red-text text-size-medio">,90</span>
+                              <span class="black-texto text-siz-medio">CADA</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l4 offset-l4 offset-s3 s6">
+                           <img class="responsive-img container" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/pCzN4bO77E4N-gdjFPdV7vqZvO285zSUwCK8BGAs/s150/2019-02-21.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                           <div class="col s12 pull-s0 pull-l2" style="text-decoration: line-through;line-height: 8px;">
+                              <span class="text-size-small"> de R$ 450,00</span>
+                           </div>
+                        </div>
+                        <div class="row strong">
+                           <div class="col l6 push-l1 s12 push-s0 ">
+                              <div class="col s12">
+                                 <div class="col s4 offset-s2 no-padding text-size-medium">
+                                    <span class=""> por 6x</span>
+                                    <span class=""> R$</span>
+                                 </div>
+                                 <div class="col s6 no-padding" style="display: -webkit-box;">
+                                    <h1 class="font-size-3-5 strong">58</h1>
+                                    <h3 class="font-size-2-5 strong">,17</h3>
+                                 </div>
+                                 <div class="row no-margin">
+                                    <span class="font-size-1">sem juros</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text red  font-size-1-5 radius-3" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">GENIO II</h2>
+                        <div class="" style="display: -webkit-inline-box;text-align: center;">
+                           <span class="red-text text-size-1">R$</span>
+                           <h2 class="red-text text-size-3">349</h2>
+                           <div style="display: grid;">
+                              <span class="red-text text-size-medio">,90</span>
+                              <span class="black-texto text-siz-medio">CADA</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l4 offset-l4 offset-s3 s6">
+                           <img class="responsive-img container" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/pCzN4bO77E4N-gdjFPdV7vqZvO285zSUwCK8BGAs/s150/2019-02-21.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                           <div class="col s12 pull-s0 pull-l2" style="text-decoration: line-through;line-height: 8px;">
+                              <span class="text-size-small"> de R$ 450,00</span>
+                           </div>
+                        </div>
+                        <div class="row strong">
+                           <div class="col l6 push-l1 s12 push-s0 ">
+                              <div class="col s12">
+                                 <div class="col s4 offset-s2 no-padding text-size-medium">
+                                    <span class=""> por 6x</span>
+                                    <span class=""> R$</span>
+                                 </div>
+                                 <div class="col s6 no-padding" style="display: -webkit-box;">
+                                    <h1 class="font-size-3-5 strong">58</h1>
+                                    <h3 class="font-size-2-5 strong">,17</h3>
+                                 </div>
+                                 <div class="row no-margin">
+                                    <span class="font-size-1">sem juros</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text red  font-size-1-5 radius-3" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 hide">
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+               </div>
+            </div>
+             <!-- ----------CAROUSEL 1 ------------------- -->
+            <div class="row mobile">
+				 <div class="carousel carousel-slider center">
+				    <div class="carousel-item white-text" href="#one!">
+				      	<h2 class="title-carousel-m ">GENIO II</h2>
+				      	<div class="col s12">
+				      		<span class="price-small-m left">R$</span>
+				      		<span class="price-m">349</span>
+				      		<span class="price-small-m">,90</span><br/>
+				      		<span class="cada-m">CADA</span>
+				      	</div>
+				      	<div class="col s12">
+				      		<img class="width-img-m" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/uAYAevUHYYcXm61r84-3OMHs-7HlQDaUgCL0BGAYYCw/h150/2019-02-21.png">
+				      	</div>
+				   		<div class="col s5 offset-s2">
+				    		<span class="tachado-m">de R$ 450,00</span>
+				    	</div>
+				      <div class="col s12">
+				    	<div class="col s3 right-align padding-m">
+					    	<span class="por-m">por 6x</span><br/>
+					    	<span class="rs-m">R$</span>
+				    	</div>
+			    		<div class="col s3 left-align padding-m">
+					    	<span class="price-maq-m">58</span>
+					    	<span class="sub-price-m">,17</span><br/>
+					    	<span class="juros-m">SEM JUROS</span>
+			    		</div>
+				    	<div class="col s4 buy-m offset-s1">
+				    		<span class="">COMPRAR</span>
+				    	</div>
+				      </div>
+					</div>
+				    <!-- -------------- -->
+				    <div class="carousel-item white-text" href="#two!">
+				      <h2>Second Panel</h2>
+				      <p class="white-text">This is your second panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#three!">
+				      <h2>Third Panel</h2>
+				      <p class="white-text">This is your third panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#four!">
+				      <h2>Fourth Panel</h2>
+				      <p class="white-text">This is your fourth panel</p>
+				    </div>
+				  </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section pad cinza">
+      <div class="container">
+         <div class="section">
+            <div class="row center col s12">
+               <h2 class="linha brown-text text-size-2-5">VEJA OUTRAS OFERTAS </h2>
+            </div>
+            <div class="row-center">
+               <p class="col s8 black-text text-size-2">Com sua nova máquina NESCAFÉ® Dolce Gusto®, você já pode aproveitar para comprar acessórios e mais bebidas com <b>um preço especial.</b></p>
+               <br>
+            </div>
+            <div class="row-center">
+               <p class="col s8 azul-text text-size-2-5"><b>KITS</b></p>
+               <br>
+               <div class="sublinhado"></div>
+               <br>
+            </div>
+            <div class="row center col s12 desktop">
+				<div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 hide">
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+               </div>
+            </div>
+             <div class="row center col s12 mobile">
+            	<div class="row"> 
+				 <div class="carousel carousel-slider center width-carousel">
+				    <div class="carousel-item white-text" href="#one!">
+				      	<h2 class="title-carousel-2-m col s10 offset-s1">1 CAIXA DE ESPRESSO + JOGO DE XÍCARAS</h2>
+				      	<div class="col s12">
+				      		<img class="width-img-m" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/uAYAevUHYYcXm61r84-3OMHs-7HlQDaUgCL0BGAYYCw/h150/2019-02-21.png">
+				      	</div>
+				      <div class="col s12">		
+				    	<div class="col s3 right-align padding-m top-m">
+					    	<span class="rs-2-m">R$</span>
+				    	</div>
+			    		<div class="col s3 left-align padding-m">
+					    	<span class="price-maq-m">80</span>
+					    	<span class="sub-price-m">,00</span>
+			    		</div>
+				    	<div class="col s4 buy-m offset-s1">
+				    		<span class="">COMPRAR</span>
+				    	</div>
+				      </div>
+					</div>
+				
+				    <!-- -------------- -->
+				    <div class="carousel-item white-text" href="#two!">
+				      <h2>Second Panel</h2>
+				      <p class="white-text">This is your second panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#three!">
+				      <h2>Third Panel</h2>
+				      <p class="white-text">This is your third panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#four!">
+				      <h2>Fourth Panel</h2>
+				      <p class="white-text">This is your fourth panel</p>
+				    </div>
+				  </div>           	
+            </div>
+            <div class="row-center">
+               <p class="col s12 azul-text text-size-2-5"><b>CAIXAS DE BEBIDAS</b></p>
+               <br>
+               <div class="bebidas sublinhado"></div>
+               <br>
+            </div>
+            <div class="row center col s12 desktop">
+				<div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s4">
+                  <div class="card  hoverable padding-top-1 radius-5">
+                     <div class="container">
+                        <h2 class=" brown-text text-size-1-5">1 CAIXA DE ESPRESSO</h2>
+                        <h2 class=" brown-text text-size-1-5">+ JOGO DE XÍCARAS</h2>
+                     </div>
+                     <div class="container row-center card-image">
+                        <div class="col l10 offset-l1">
+                           <img class="responsive-img container" src="https://www.nescafe-dolcegusto.com.br/media/catalog/product/cache/15/image/341x341/9df78eab33525d08d6e5fb8d27136e95/1/1/11407_espresso_2.png">
+                        </div>
+                     </div>
+                     <div class="container card-content no-padding">
+                        <div class="row no-margin strong">
+                        </div>
+                        <div class="row strong">
+                           <div class="col s6 l6 push-s2 push-l1">
+                              <div class="row-center">
+                                 <div class="col l4 s4" style="
+                                    ">
+                                    <br>
+                                    <p class="text-size-1-5">R$</p>
+                                 </div>
+                                 <div class="col s8 l5 pull-l1 push-s2 no-padding " style="display: -webkit-box;">
+                                    <h1 class="text-size-4-5 strong">58</h1>
+                                    <h3 class="text-size-3-5 strong">,17</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col s12 l6 truncate no-padding">
+                              <a class="ripple btn btn-large white-text font-size-1-5 radius-3 red" style="margin-bottom: 3px;"><i class="material-icons tiny right">shopping_cart</i>COMPRAR
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <i class="row material-icons center activator">keyboard_arrow_up</i>
+                     <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 ">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 hide">
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+                  {{widget type="optaros_widgets/widget_product" template="optaros/widgets/product.phtml" sku="product/286"}}
+               </div>
+            </div>
+             <div class="row center col s12 mobile">
+            	<div class="row"> 
+				 <div class="carousel carousel-slider center width-carousel">
+				    <div class="carousel-item white-text" href="#one!">
+				      	<h2 class="title-carousel-2-m col s10 offset-s1">1 CAIXA DE ESPRESSO + JOGO DE XÍCARAS</h2>
+				      	<div class="col s12">
+				      		<img class="width-img-m" src="https://lh3.googleusercontent.com/-AByqAtuFTxw/XG6wGq3wijI/AAAAAAAAAJI/uAYAevUHYYcXm61r84-3OMHs-7HlQDaUgCL0BGAYYCw/h150/2019-02-21.png">
+				      	</div>
+				      <div class="col s12">		
+				    	<div class="col s3 right-align padding-m top-m">
+					    	<span class="rs-2-m">R$</span>
+				    	</div>
+			    		<div class="col s3 left-align padding-m">
+					    	<span class="price-maq-m">80</span>
+					    	<span class="sub-price-m">,00</span>
+			    		</div>
+				    	<div class="col s4 buy-m offset-s1">
+				    		<span class="">COMPRAR</span>
+				    	</div>
+				      </div>
+					</div>
+				
+				    <!-- -------------- -->
+				    <div class="carousel-item white-text" href="#two!">
+				      <h2>Second Panel</h2>
+				      <p class="white-text">This is your second panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#three!">
+				      <h2>Third Panel</h2>
+				      <p class="white-text">This is your third panel</p>
+				    </div>
+				    <div class="carousel-item white-text" href="#four!">
+				      <h2>Fourth Panel</h2>
+				      <p class="white-text">This is your fourth panel</p>
+				    </div>
+				  </div>           	
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section no-pad-bot red" >
+      <div class="container padding-y-4">
+         <div class="section">
+            <div class="row center ">
+               <h2 class="col  push-s6 icone circle" style="font-size: 39px;margin-top: -120px;margin-left: -35px;"><i class="row material-icons center activator">comment</i></h2>
+            </div>
+            <div class="row-center">
+               <p class="col s8 white-text text-size-large"><b>Se você já comprou sua máquina em alguma loja e precisa cadastrar <br>
+                  sua nota fiscal, clique aqui.</b>
+               </p>
+               <br>
+            </div>
+            <div class="row-center col s12">
+               <a href="#" id="download-button" class="white-text btn-large ripple azul col s8 push-s2" style="font-size: 24.5px ;border-radius:10px"><b>CADASTRAR</b></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section no-pad-bot" style="background: #ccc;min-height: 300px;">
+      <div class="container n-margin-top-1">
+         {{customVar code=faq_padrao}}
+      </div>
+   </div>
+</div>
